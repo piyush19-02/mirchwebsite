@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { AdminSidebar } from "../../components/admin/AdminSidebar";
 import { Trash2 } from "lucide-react";
 
-const slots = [1, 2, 3, 4];
+const slots = [1, 2, 3, 4,5];
 
 export default function StoryImage() {
   const [images, setImages] = useState<any[]>([]);

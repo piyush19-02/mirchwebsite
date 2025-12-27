@@ -12,7 +12,7 @@ export function Hero() {
       });
     }
   };
-  return <div className="relative  "   style={{
+  return <div className="relative overflow-y-hidden "   style={{
 backgroundImage: `url("${bgImage}")`,
 backgroundSize: 'cover',
 backgroundPosition: 'center',

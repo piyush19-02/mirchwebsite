@@ -28,9 +28,9 @@ export function ProductCard({
           <h3 className="text-lg font-bold text-amber-950 line-clamp-1">
             {product.name}
           </h3>
-          <span className="inline-flex items-center px-2 py-1 rounded bg-red-50 text-red-700 text-xs font-bold">
+          {/* <span className="inline-flex items-center px-2 py-1 rounded bg-red-50 text-red-700 text-xs font-bold">
             ₹{product.price}
-          </span>
+          </span> */}
         </div>
 
         <p className="text-amber-700/70 text-sm mb-y hidden lg:block line-clamp-2 flex-grow">
@@ -38,11 +38,11 @@ export function ProductCard({
         </p>
 
         <div className="flex items-center justify-between mt-auto pt-4 border-t border-amber-50">
-          <span className="text-xs text-amber-500 font-medium">
+          {/* <span className="text-xs text-amber-500 font-medium">
             Per {product.unit}
-          </span>
-          <Button size="sm" onClick={() => onBuy(product)} className="shadow-red-200">
-            Buy Now
+          </span> */}
+          <Button size="sm" onClick={() => onBuy(product)} className="shadow-red-200 w-full">
+            Order Now
             <ShoppingBag className="ml-2 h-4 w-4" />
           </Button>
         </div>

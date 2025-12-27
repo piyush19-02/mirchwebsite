@@ -12,7 +12,7 @@ interface Product {
 }
 
 export function ProductGrid() {
-  const API_HOST = "http://10.221.214.70:8080";
+  const API_HOST = "http://localhost:8080";
 
   const [products, setProducts] = useState<Product[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);

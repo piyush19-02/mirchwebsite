@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LayoutDashboard, PlusCircle, ShoppingBag, List, LogOut } from 'lucide-react';
+import path from 'path';
 export function AdminSidebar() {
   const location = useLocation();
   const isActive = (path: string) => location.pathname === path;
@@ -20,7 +21,18 @@ export function AdminSidebar() {
     name: 'Orders',
     path: '/admin/orders',
     icon: ShoppingBag
-  }];
+  },
+{
+  name: 'backgrund Color Products',
+  path: '/admin/products-section-setting',
+  icon: PlusCircle
+},
+{
+  name: 'Story Images',
+  path: '/admin/story-images',
+  icon: PlusCircle
+}
+];
   return <div className="hidden md:flex flex-col w-64 bg-amber-950 text-amber-100 min-h-screen fixed left-0 top-0 overflow-y-auto">
       <div className="p-6 border-b border-amber-900">
         <div className="flex items-center gap-2">

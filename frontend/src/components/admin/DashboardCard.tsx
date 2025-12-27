@@ -6,6 +6,9 @@ interface DashboardCardProps {
   icon: BoxIcon;
   color: 'red' | 'orange' | 'amber';
 }
+
+
+
 export function DashboardCard({
   title,
   value,
