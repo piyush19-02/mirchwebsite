@@ -8,7 +8,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-3xl" role="img" aria-label="chilli">
-                🌶️
+                
               </span>
               <span className="font-bold text-2xl text-white tracking-tight">
                 Mirchi Masala
@@ -65,19 +65,19 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
                 <span className="text-amber-200/80">
-               super market , shop no .167
+              shop no 201 , Hevat Ram Marg , Sukervariya Hat
                   <br />
                  Dewas Madhya Pradesh , India - 455001
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-red-500 flex-shrink-0" />
-                <span className="text-amber-200/80">+91 98765 43210</span>
+                <span className="text-amber-200/80">+91 9770298309</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-red-500 flex-shrink-0" />
                 <span className="text-amber-200/80">
-                  hello@mirchimasala.com
+                  santoshsharma@gmail.com
                 </span>
               </li>
             </ul>
