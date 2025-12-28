@@ -19,7 +19,7 @@ function Front() {
    
     <div data-aos="slide-up" className="text-white" >
       <h1 className="  drop-shadow-xl font-serif leading-tight text-[3rem] ml-5 md:ml-0 md:text-[8rem]" >
-       <span className="text-blue-400 drop-shadow-xl"> Shri  </span><span className=""> Ganesh </span><span className="text-yellow-300"> Masala </span><span className="text-green-500"> Udhyog</span>
+       <span className="text-blue-400 drop-shadow-xl"> Shri  </span><span className="text-blue-500"> Ganesh </span><span className="text-blue-300"> Masala </span><span className="text-blue-500"> Udhyog</span>
       </h1>
 
 

@@ -38,7 +38,6 @@ backgroundRepeat: 'no-repeat',
           <p className="text-xl md:text-2xl text-amber-100 shadow  italic font-medium mb-8 font-serif">
             "Shuddh, Teekhi aur Bharosemand Masale"
           </p>
- <h1 className="text-3xl font-bold underline">    Hello world!  </h1>
           <p className="text-lg text-amber-100 mb-10 max-w-2xl mx-auto  shadow-2xl leading-relaxed">
             Experience the true taste of India with our hand-picked, sun-dried,
             and freshly ground spices. No preservatives, just pure flavor.
