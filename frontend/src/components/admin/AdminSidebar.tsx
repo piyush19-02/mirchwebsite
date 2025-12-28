@@ -82,7 +82,7 @@ export function AdminSidebar() {
       >
         <div className="p-6 border-b border-amber-900 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-2xl">🌶️</span>
+           
             <span className="font-bold text-xl text-white">Admin Panel</span>
           </div>
 
