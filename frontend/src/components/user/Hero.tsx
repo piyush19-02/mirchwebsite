@@ -2,7 +2,7 @@ import React from 'react';
 // import { Button } from '../shared/Button';
 import { Button } from '../shared/Button';
 import { ArrowRight } from 'lucide-react';
-import bgImage from "../../images/herobg.png";
+import bgImage from '../../images/herobg.png';
 export function Hero() {
   const scrollToProducts = () => {
     const element = document.getElementById('products');

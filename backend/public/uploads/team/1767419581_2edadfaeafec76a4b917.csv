@@ -1,0 +1,20 @@
+[0;1;32m●[0m gdm.service - GNOME Display Manager
+     Loaded: loaded (]8;;file://piyush-yadav-IdeaPad-3-15IML05-U1a/usr/lib/systemd/system/gdm.service/usr/lib/systemd/system/gdm.service]8;;; static[0;1;32m[0m)
+     Active: [0;1;32mactive (running)[0m since Thu 2025-12-04 14:16:42 IST; 11min ago
+   Main PID: 1498 (gdm3)
+      Tasks: 4 (limit: 4212)
+     Memory: 3.9M (peak: 9.4M swap: 2.6M swap peak: 2.6M)
+        CPU: 439ms
+     CGroup: /system.slice/gdm.service
+             └─[0;38;5;245m1498 /usr/sbin/gdm3[0m
+
+Dec 04 14:16:44 piyush-yadav-IdeaPad-3-15IML05-U1a gdm3[1498]: [0;1;31m[0;1;39m[0;1;31mGdm: on_display_removed: assertion 'GDM_IS_REMOTE_DISPLAY (display)' failed[0m
+Dec 04 14:16:44 piyush-yadav-IdeaPad-3-15IML05-U1a gdm-autologin][1883]: pam_unix(gdm-autologin:session): session closed for user piyush-yadav
+Dec 04 14:16:44 piyush-yadav-IdeaPad-3-15IML05-U1a gdm3[1498]: [0;1;39m[0;1;31m[0;1;39mGdm: GdmDisplay: Session never registered, failing[0m
+Dec 04 14:16:44 piyush-yadav-IdeaPad-3-15IML05-U1a gdm3[1498]: [0;1;31m[0;1;39m[0;1;31mGdm: on_display_added: assertion 'GDM_IS_REMOTE_DISPLAY (display)' failed[0m
+Dec 04 14:16:44 piyush-yadav-IdeaPad-3-15IML05-U1a gdm3[1498]: [0;1;31m[0;1;39m[0;1;31mGdm: on_display_removed: assertion 'GDM_IS_REMOTE_DISPLAY (display)' failed[0m
+Dec 04 14:16:44 piyush-yadav-IdeaPad-3-15IML05-U1a gdm-autologin][1907]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgkr-pam: no password is available for user[0m
+Dec 04 14:16:44 piyush-yadav-IdeaPad-3-15IML05-U1a gdm-autologin][1907]: pam_unix(gdm-autologin:session): session opened for user piyush-yadav(uid=1000) by piyush-yadav(uid=0)
+Dec 04 14:16:44 piyush-yadav-IdeaPad-3-15IML05-U1a gdm-autologin][1907]: [0;1;31m[0;1;39m[0;1;31mgkr-pam: couldn't unlock the login keyring.[0m
+Dec 04 14:16:44 piyush-yadav-IdeaPad-3-15IML05-U1a gdm3[1498]: [0;1;31m[0;1;39m[0;1;31mGdm: on_display_added: assertion 'GDM_IS_REMOTE_DISPLAY (display)' failed[0m
+Dec 04 14:16:44 piyush-yadav-IdeaPad-3-15IML05-U1a gdm3[1498]: [0;1;31m[0;1;39m[0;1;31mGdm: on_display_removed: assertion 'GDM_IS_REMOTE_DISPLAY (display)' failed[0m
