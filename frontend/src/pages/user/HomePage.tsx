@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from '../../components/user/Navbar';
 import { Hero } from '../../components/user/Hero';
-// import { ProductGrid } from '../../components/user/ProductGrid';
 import { ProductGrid } from '../../components/user/ProductGrid';
-// import { Footer } from '../../components/user/Footer'
 import { Footer } from '../../components/user/Footer';
 import { Helmet } from "react-helmet-async";
-// import Front from '../../components/user/Front';
 import Front from '../../components/user/Front';
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -80,9 +77,9 @@ const API_HOST = "http://10.221.214.70:8080";
       <Navbar />
 <Front/>
 <a
-  href="tel:+91934318529h4"
- className="animate-bounce fixed bottom-5 right-5 bg-green-500 hover:bg-green-600
-          text-white p-4 my-10 rounded-full shadow-lg
+  href="tel:+919343185294"
+ className="animate-bounce fixed bottom-40 right-7 bg-green-500 hover:bg-green-600
+          text-white p-4  rounded-full shadow-lg
           flex items-center justify-center z-50"
 >
   📞
@@ -124,7 +121,7 @@ const API_HOST = "http://10.221.214.70:8080";
               </div>
 
               {/* Text */}
-              <div data-aos="slide-left">
+              <div data-aos="slide-left"  aos-offset="4000">
                 <h2 className="text-3xl font-bold text-amber-950 mb-8">
                   Our Story of Spice
                 </h2>

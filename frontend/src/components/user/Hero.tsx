@@ -38,7 +38,7 @@ backgroundRepeat: 'no-repeat',
           <p className="text-xl md:text-2xl text-amber-100 shadow  italic font-medium mb-8 font-serif">
             "Shuddh, Teekhi aur Bharosemand Masale"
           </p>
- <h1 className="text-3xl font-bold underline">    Hello world!  </h1>
+
           <p className="text-lg text-amber-100 mb-10 max-w-2xl mx-auto  shadow-2xl leading-relaxed">
             Experience the true taste of India with our hand-picked, sun-dried,
             and freshly ground spices. No preservatives, just pure flavor.
@@ -49,9 +49,11 @@ backgroundRepeat: 'no-repeat',
               View Products
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="outline" size="lg" className="min-w-[200px]">
+            <a
+        href="https://wa.me/919343185294?text=Hello%20I%20want%20Connect%20regarding%20Mirchi%20Masala%20products"
+        target="_blank" variant="outline" size="lg" className="group min-w-[200px]">
               Contact Us
-            </Button>
+            </a>
           </div>
         </div>
       </div>
