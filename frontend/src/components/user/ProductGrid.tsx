@@ -12,7 +12,7 @@ interface Product {
 }
 
 export function ProductGrid() {
-  const API_HOST = "http://localhost:8080";
+  const API_HOST = "https://api.spicesshreeganesh.com";
 
   const [products, setProducts] = useState<Product[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -32,7 +32,7 @@ export function ProductGrid() {
             name: p.name,
             description: p.description,
             price: p.price,
-            unit: "1Kg",
+            unit: "",
             image: p.image
               ? `${API_HOST}/uploads/products/${p.image}`
               : "https://via.placeholder.com/400",

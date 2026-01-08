@@ -6,12 +6,12 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:8080",
+        target: "https://api.spicesshreeganesh.com",
         changeOrigin: true,
         secure: false,
       },
       "/admin": {
-        target: "http://localhost:8080",
+        target: "https://api.spicesshreeganesh.com",
         changeOrigin: true,
         secure: false,
       },

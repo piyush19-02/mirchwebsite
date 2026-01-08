@@ -68,9 +68,9 @@ export function ProductTable() {
                 <img
                   src={
                     product.image
-                      ? `http://localhost:8080/uploads/products/${product.image}`
+                      ? `https://api.spicesshreeganesh.com/uploads/products/${product.image}`
                       : "https://via.placeholder.com/40"
-                  }
+                  } alt="itemimage"
                   className="h-10 w-10 rounded-full object-cover"
                 />
                 {product.name}

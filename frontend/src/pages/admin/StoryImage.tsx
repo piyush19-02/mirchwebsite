@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { AdminSidebar } from "../../components/admin/AdminSidebar";
 import { Plus, Trash2 } from "lucide-react";
 
-const API = "http://localhost:8080";
+const API = "https://api.spicesshreeganesh.com";
 
 type TeamMember = {
   id: number;

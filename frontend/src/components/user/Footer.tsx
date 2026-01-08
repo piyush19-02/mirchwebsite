@@ -77,7 +77,7 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-red-500 flex-shrink-0" />
                 <span className="text-amber-200/80">
-                  santoshsharma@gmail.com
+                  santoshfn@gmail.com
                 </span>
               </li>
             </ul>
@@ -89,8 +89,8 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Mirchi Masala Store. All rights
             reserved.
           </p>
-          <p>Devloped and manage By Piyush & Ajay</p>
-          <p>Feelm Free to contact: 8224950286 , 9343185294</p>
+          <p>Devloped and manage By <a className='text-blue-600' href='https://www.linkedin.com/in/piyush-yadav-500805228/' target='_blank' >Piyush & Ajay</a > </p>
+          <p>Feel Free to contact: 8224950286 , 9343185294</p>
         </div>
       </div>
     </footer>;

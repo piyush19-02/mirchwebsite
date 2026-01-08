@@ -4,7 +4,7 @@ import { DashboardCard } from "../../components/admin/DashboardCard";
 import { OrdersList } from "../../components/admin/OrdersList";
 import { Package, ShoppingBag, TrendingUp } from "lucide-react";
 
-const API = "http://localhost:8080";
+const API = "https://api.spicesshreeganesh.com";
 
 export function AdminDashboard() {
   const [totalProducts, setTotalProducts] = useState(0);

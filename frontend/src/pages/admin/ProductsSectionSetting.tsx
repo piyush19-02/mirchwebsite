@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { AdminSidebar } from "../../components/admin/AdminSidebar";
 
-const API = "localhost:8000";
+const API = "https://api.spicesshreeganesh.com";
 
 // 🎨 Preset colors (mobile dropdown)
 const colorOptions = [
