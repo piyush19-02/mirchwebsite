@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { AdminSidebar } from '../../components/admin/AdminSidebar';
 import { OrdersList } from '../../components/admin/OrdersList';
 export function OrdersPage() {

@@ -49,7 +49,7 @@ export function OrderDrawer({ isOpen, onClose, product }: OrderDrawerProps) {
 
     try {
       // 🔹 BACKEND SAVE
-      await fetch("/api/orders", {
+      await fetch(`${import.meta.env.VITE_API_URL}/orders`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -75,7 +75,7 @@ Total: ₹${product.price * quantity}
 `;
 
       window.open(
-        `https://wa.me/918224950286?text=${encodeURIComponent(message)}`,
+        `https://wa.me/919770298309?text=${encodeURIComponent(message)}`,
         "_blank"
       );
 

@@ -12,11 +12,16 @@ $routes->get('api/products', 'Products::list');
 $routes->delete('api/products/(:num)', 'Products::delete/$1');
 $routes->get('api/products/(:num)', 'Products::show/$1');
 $routes->post('api/products/(:num)', 'Products::update/$1');
-$routes->group('api/admin', function ($routes) {
-    $routes->post('login', 'AdminAuth::login');
-    $routes->get('logout', 'AdminAuth::logout');
+$routes->group('api', ['filter' => 'cors'], function ($routes) {
+
+    $routes->group('admin', function ($routes) {
+        $routes->post('login', 'AdminAuth::login');
+        $routes->get('logout', 'AdminAuth::logout');
+    });
+
 });
-$routes->get('uploads/products/(:any)', 'Products::image/$1');
+
+$routes->get('api/uploads/products/(:any)', 'Products::image/$1');
 //added routes for orders admin
 $routes->post('api/orders', 'Orders::create');
 $routes->get('api/orders', 'Orders::list');
@@ -24,7 +29,7 @@ $routes->get('api/orders', 'Orders::list');
 
 $routes->group('', ['filter' => 'cors'], function ($routes) {
     $routes->get('api/team', 'StoryController::index');
-    $routes->post('admin/team/store', 'StoryController::store');
+    $routes->post('api/admin/team/store', 'StoryController::store');
     $routes->delete('api/admin/team/(:num)', 'StoryController::delete/$1');
 });
 

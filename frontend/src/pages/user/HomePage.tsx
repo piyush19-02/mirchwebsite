@@ -32,17 +32,42 @@ useEffect(() => {
   return (
     <div  className="min-h-screen  font-sans text-slate-900">
       <Helmet>
-        <title>Mirchi Masala | Pure Spices Online</title>
-        <meta
-          name="description"
-          content="Buy pure red chilli, turmeric, garam masala directly from farmers. 100% authentic spices."
-        />
+     <title>
+Shree Ganesh Masala Udhyog | Premium Indian Spices Manufacturer & Exporter from Dewas, India
+</title>
+
+       <meta
+  name="description"
+  content="Shree Ganesh Masala Udhyog, Dewas (India) is a trusted manufacturer and supplier of premium Indian spices including red chilli powder, turmeric, coriander and garam masala. Supplying quality spices across India and for international markets."
+/>
+<meta
+  name="keywords"
+  content="
+  Shree Ganesh Masala Udhyog,
+  Indian spices manufacturer,
+  spices exporter India,
+  chilli powder exporter,
+  turmeric supplier India,
+  garam masala manufacturer,
+  spices supplier Dewas,
+  Indian masala exporter,
+  bulk spices supplier,
+  wholesale spices India
+  "
+/>
+<meta property="og:title" content="Shree Ganesh Masala Udhyog – Premium Spices in Dewas -– Premium Spices in India" />
+<meta property="og:description" content="Buy pure & fresh spices from Shree Ganesh Masala Udhyog, Dewas. Mirch masala, haldi, dhaniya & all Indian spices available." />
+<meta property="og:type" content="business.business" />
+<meta property="og:url" content="https://spicesshreeganesh.com.com" />
+<meta property="og:image" content="https://spicesshreeganesh.com/logo.png" />
+<meta property="og:locale" content="en_IN" />
+
       </Helmet>
 
       <Navbar />
 <Front/>
 <a
-  href="tel:+919343185294"
+  href="tel:+919770298309"
  className="animate-bounce fixed bottom-40 right-7 bg-green-500 hover:bg-green-600
           text-white p-4  rounded-full shadow-lg
           flex items-center justify-center z-50"
@@ -52,7 +77,7 @@ useEffect(() => {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/919343185294?text=Hello%20I%20want%20Connect%20regarding%20Mirchi%20Masala%20products"
+        href="https://wa.me/919770298309?text=Hello%20I%20want%20Connect%20regarding%20Mirchi%20Masala%20products"
         target="_blank"
         className="animate-bounce fixed bottom-5 right-5 bg-green-500 hover:bg-green-600
           text-white p-4 my-10 rounded-full shadow-lg

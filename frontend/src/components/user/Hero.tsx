@@ -1,8 +1,7 @@
-import React from 'react';
 // import { Button } from '../shared/Button';
 import { Button } from '../shared/Button';
 import { ArrowRight } from 'lucide-react';
-import bgImage from '../../images/herobg.png';
+// import bgImage from '../../images/herobg.png';
 export function Hero() {
   const scrollToProducts = () => {
     const element = document.getElementById('products');
@@ -13,7 +12,7 @@ export function Hero() {
     }
   };
   return <div className="relative overflow-y-hidden "   style={{
-backgroundImage: `url("${bgImage}")`,
+backgroundImage: `url("herobg.png")`,
 backgroundSize: 'cover',
 backgroundPosition: 'center',
 backgroundRepeat: 'no-repeat',

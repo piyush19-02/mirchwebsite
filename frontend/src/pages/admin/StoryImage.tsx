@@ -21,7 +21,7 @@ export default function AdminTeam() {
 
   // ================= FETCH =================
   const fetchTeam = async () => {
-    const res = await fetch(`/api/team`);
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/team`);
     const data = await res.json();
     setTeam(Array.isArray(data) ? data : []);
   };
@@ -41,7 +41,7 @@ export default function AdminTeam() {
     fd.append("role", form.role);
     fd.append("image", image);
 
-    await fetch(`/admin/team/store`, {
+    await fetch(`${import.meta.env.VITE_API_URL}/admin/team/store`, {
       method: "POST",
       body: fd,
     });
@@ -59,7 +59,7 @@ export default function AdminTeam() {
   const deleteMember = async (id: number) => {
     if (!confirm("Delete this member?")) return;
 
-    await fetch(`${API}/api/admin/team/${id}`, {
+    await fetch(`${import.meta.env.VITE_API_URL}/admin/team/${id}`, {
       method: "DELETE",
     });
 
@@ -137,7 +137,7 @@ export default function AdminTeam() {
               className="bg-white border rounded p-4 text-center"
             >
               <img
-                src={`${API}/${member.image}`}
+                src={`${API}/uploads/team/${member.image}`}
                 className="h-28 w-28 mx-auto rounded-full object-cover mb-3"
               />
               <h3 className="font-semibold">{member.name}</h3>

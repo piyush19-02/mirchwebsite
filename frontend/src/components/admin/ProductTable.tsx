@@ -16,7 +16,8 @@ export function ProductTable() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/api/products")
+    fetch(`${import.meta.env.VITE_API_URL}/products`)
+
       .then(res => res.json())
       .then(data => setProducts(data));
   }, []);
@@ -24,7 +25,7 @@ export function ProductTable() {
   const deleteProduct = async (id: number) => {
     if (!confirm("Are you sure you want to delete this product?")) return;
 
-    const res = await fetch(`/api/products/${id}`, { method: "DELETE" });
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/products/${id}`, { method: "DELETE" });
 
     if (res.ok) {
       setProducts(prev => prev.filter(p => p.id !== id));
@@ -70,7 +71,7 @@ export function ProductTable() {
                     product.image
                       ? `https://api.spicesshreeganesh.com/uploads/products/${product.image}`
                       : "https://via.placeholder.com/40"
-                  } alt="itemimage"
+                  } alt={product.name}
                   className="h-10 w-10 rounded-full object-cover"
                 />
                 {product.name}

@@ -10,7 +10,7 @@ export function AdminDashboard() {
   const [totalProducts, setTotalProducts] = useState(0);
 
   useEffect(() => {
-    fetch(`${API}/api/dashboard/counts`)
+   fetch(`${import.meta.env.VITE_API_URL}/dashboard/counts`)
       .then(res => res.json())
       .then(data => {
         setTotalProducts(data.totalProducts || 0);

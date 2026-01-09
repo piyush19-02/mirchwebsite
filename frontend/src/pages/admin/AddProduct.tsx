@@ -8,6 +8,7 @@ export function AddProduct() {
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
   const [active, setActive] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [image, setImage] = useState<File | null>(null);
   const [alert, setAlert] = useState<{
     type: "success" | "error";
@@ -16,6 +17,9 @@ export function AddProduct() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (loading) return; // ✅ double submit prevent
+
+    setLoading(true); // 🔥 start loading
 
     const formData = new FormData();
     formData.append("name", name);
@@ -25,9 +29,9 @@ export function AddProduct() {
     if (image) formData.append("image", image);
 
     try {
-      const res = await fetch("/api/products", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/products`, {
         method: "POST",
-        body: formData, // 🔥 IMPORTANT
+        body: formData,
       });
 
       const data = await res.json();
@@ -43,9 +47,10 @@ export function AddProduct() {
       }
     } catch {
       setAlert({ type: "error", message: "Server error" });
+    } finally {
+      setLoading(false); // 🔥 stop loading
+      setTimeout(() => setAlert(null), 3000);
     }
-
-    setTimeout(() => setAlert(null), 3000);
   };
 
   return (
@@ -67,10 +72,29 @@ export function AddProduct() {
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-5 bg-white p-6 rounded shadow">
-          <Input label="Name" value={name} onChange={(e) => setName(e.target.value)} />
-          <Input label="Price" type="number" value={price} onChange={(e) => setPrice(e.target.value)} />
-          <Input label="Description" multiline value={description} onChange={(e) => setDescription(e.target.value)} />
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-5 bg-white p-6 rounded shadow"
+        >
+          <Input
+            label="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+
+          <Input
+            label="Price"
+            type="number"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
+          />
+
+          <Input
+            label="Description"
+            multiline
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
 
           <input
             type="file"
@@ -80,16 +104,18 @@ export function AddProduct() {
           />
 
           <label className="flex gap-2 items-center text-sm">
-            <input type="checkbox" checked={active} onChange={(e) => setActive(e.target.checked)} />
+            <input
+              type="checkbox"
+              checked={active}
+              onChange={(e) => setActive(e.target.checked)}
+            />
             Active
           </label>
 
-          <Button type="submit" size="lg">
-            Add Product
+          <Button type="submit" size="lg" disabled={loading}>
+            {loading ? "Adding..." : "Add Product"}
           </Button>
         </form>
-        
-      
       </div>
     </div>
   );

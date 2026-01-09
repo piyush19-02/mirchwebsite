@@ -33,7 +33,7 @@ export default function ProductsSectionSetting() {
 
   // 🔹 GET saved color from DB
   useEffect(() => {
-    fetch(`${API}/api/settings`)
+    fetch(`${import.meta.env.VITE_API_URL}/settings`)
       .then(res => res.json())
       .then(data => {
         if (data?.bg_color) setColor(data.bg_color);
@@ -43,7 +43,7 @@ export default function ProductsSectionSetting() {
   // 🔹 SAVE color
   const saveColor = async () => {
     try {
-      const res = await fetch(`${API}/api/settings`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/settings`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -13,7 +13,7 @@ export default function Story() {
   const [team, setTeam] = useState<TeamMember[]>([]);
 
   const fetchTeam = async () => {
-    const res = await fetch(`${API}/api/team`);
+    const res = await  fetch(`${import.meta.env.VITE_API_URL}/team`)
     const data = await res.json();
     setTeam(Array.isArray(data) ? data : []);
   };
@@ -43,7 +43,7 @@ Traditional grinding preserves natural oils and aroma.        </p>
               className="w-[300px] h-[320px] bg-white rounded-xl shadow p-3 text-center"
             >
               <img
-                src={`${API}/${member.image}`}
+                src={`${API}/uploads/team/${member.image}`}
                 alt={member.name}
                 className="h-52 w-45 mx-auto object-cover mb-4"
               />

@@ -1,7 +1,7 @@
 import  { useState } from 'react';
 import { Menu, X, ShoppingBag } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logo from "../../images/logo.png";
+// import logo from "../../images/logo.png";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +25,7 @@ export function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center gap-2">
               <span className="text-2xl" role="img" aria-label="chilli">
-             <img className='logo w-20 md:w-20' src={logo} alt="" />
+             <img className='logo w-20 md:w-20' src={"logo.png"} alt="logo" />
               </span>
               <span className="font-bold  md:text-xl text-lg text-red-800 text-wrap tracking-tight">
         Shri Ganesh Masala Udhyog Dewas
@@ -38,7 +38,7 @@ export function Navbar() {
             {navLinks.map(link => <a key={link.name} href={link.href} className="text-amber-900 hover:text-red-700 font-medium transition-colors text-sm uppercase tracking-wide">
                 {link.name}
               </a>)}
-            <Link to="/admin/login" className="text-xs text-amber-500 hover:text-amber-700 font-medium ml-4">
+            <Link to="/admin/login" className="hidden text-xs text-amber-500 hover:text-amber-700 font-medium ml-4">
               Admin
             </Link>
           </div>

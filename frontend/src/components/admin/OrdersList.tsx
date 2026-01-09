@@ -15,7 +15,7 @@ interface Order {
 
 
   useEffect(() => {
-    fetch("/api/orders")
+    fetch(`${import.meta.env.VITE_API_URL}/orders`)
       .then(res => res.json())
       .then(setOrders);
   }, []);

@@ -23,7 +23,7 @@ export function ProductGrid() {
 
   // 🔹 fetch products
   useEffect(() => {
-    fetch("/api/products")
+    fetch(`${import.meta.env.VITE_API_URL}/products`)
       .then(res => res.json())
       .then(data => {
         setProducts(
@@ -34,7 +34,7 @@ export function ProductGrid() {
             price: p.price,
             unit: "",
             image: p.image
-              ? `${API_HOST}/uploads/products/${p.image}`
+              ? `https://api.spicesshreeganesh.com/uploads/products/${p.image}`
               : "https://via.placeholder.com/400",
           }))
         );
@@ -43,7 +43,7 @@ export function ProductGrid() {
 
   // 🔹 fetch section background color (from admin)
   useEffect(() => {
-    fetch("/api/settings")
+   fetch(`${import.meta.env.VITE_API_URL}/setting`)
       .then(res => res.json())
       .then(data => {
         if (data?.bg_color) setBgColor(data.bg_color);

@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+   base: "/",
   server: {
     proxy: {
       "/api": {
@@ -10,11 +11,11 @@ export default defineConfig({
         changeOrigin: true,
         secure: false,
       },
-      "/admin": {
-        target: "https://api.spicesshreeganesh.com",
-        changeOrigin: true,
-        secure: false,
-      },
+      // "/admin": {
+      //   target: "https://api.spicesshreeganesh.com",
+      //   changeOrigin: true,
+      //   secure: false,
+      // },
     },
   },
 });

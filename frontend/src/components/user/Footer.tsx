@@ -16,7 +16,12 @@ export function Footer() {
             </div>
             <p className="text-amber-200/80 leading-relaxed">
               Bringing the authentic taste of Indian spices to your kitchen.
-              Pure, fresh, and full of flavor.
+              Pure, fresh, and full of flavor.<br/>
+              ✔ Made in India  <br/>
+✔ Bulk Supply Available  <br/>
+✔ Export Quality Spices  <br/>
+✔ Worldwide Enquiry via WhatsApp  
+
             </p>
             <div className="flex space-x-4 pt-2">
               <a href="#" className="text-amber-300 hover:text-white transition-colors">
@@ -89,7 +94,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Mirchi Masala Store. All rights
             reserved.
           </p>
-          <p>Devloped and manage By <a className='text-blue-600' href='https://www.linkedin.com/in/piyush-yadav-500805228/' target='_blank' >Piyush & Ajay</a > </p>
+          <p>Devloped & Devloped with ❤️ By <a className='text-blue-600' href='https://www.linkedin.com/in/piyush-yadav-500805228/' target='_blank' >Piyush & Ajay</a > </p>
           <p>Feel Free to contact: 8224950286 , 9343185294</p>
         </div>
       </div>

@@ -24,7 +24,7 @@ type AlertType = {
 
   // 🔹 Load product data
   useEffect(() => {
-  fetch(`/api/products/${id}`)
+  fetch(`${import.meta.env.VITE_API_URL}/products/${id}`)
     .then(res => res.json())
     .then(data => {
       const product = data.data ?? data; // 🔥 IMPORTANT
@@ -59,7 +59,7 @@ type AlertType = {
     if (image) {formData.append("image", image);}
 
     try {
-      const res = await fetch(`/api/products/${id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/products/${id}`, {
         method: "POST", // CI friendly
         body: formData,
       });
